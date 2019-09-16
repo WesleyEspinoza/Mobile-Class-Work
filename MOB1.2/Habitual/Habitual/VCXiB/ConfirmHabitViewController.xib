@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmHabitViewController" customModule="Habitual" customModuleProvider="target">
+            <connections>
+                <outlet property="habitImageView" destination="7x1-Ru-U3v" id="UFa-Js-w8S"/>
+                <outlet property="habitTextInpuField" destination="y0j-ck-gNW" id="bmz-FO-xfk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7x1-Ru-U3v">
+                    <rect key="frame" x="47" y="65" width="281" height="263"/>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y0j-ck-gNW">
+                    <rect key="frame" x="47" y="488" width="281" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uL6-wP-zKk">
+                    <rect key="frame" x="47" y="617" width="281" height="30"/>
+                    <color key="backgroundColor" red="0.40000000000000002" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="281" id="fpW-5T-LEq"/>
+                        <constraint firstAttribute="height" constant="30" id="hcZ-zL-TEj"/>
+                    </constraints>
+                    <state key="normal" title="Create Habit!">
+                        <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="habitButtonpress:" destination="-1" eventType="touchUpInside" id="YID-6e-IJh"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Your Habit!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8g9-zl-AaS">
+                    <rect key="frame" x="85" y="396" width="204" height="33"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8g9-zl-AaS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="85" id="1sp-b2-jq7"/>
+                <constraint firstItem="y0j-ck-gNW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="47" id="4z6-b0-3M4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8g9-zl-AaS" secondAttribute="trailing" constant="86" id="7c5-ga-LEj"/>
+                <constraint firstItem="uL6-wP-zKk" firstAttribute="top" secondItem="y0j-ck-gNW" secondAttribute="bottom" constant="99" id="EVy-ny-ji7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uL6-wP-zKk" secondAttribute="trailing" constant="47" id="KVF-Yw-BGx"/>
+                <constraint firstItem="uL6-wP-zKk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="47" id="QKv-Sh-OOL"/>
+                <constraint firstItem="8g9-zl-AaS" firstAttribute="top" secondItem="7x1-Ru-U3v" secondAttribute="bottom" constant="68" id="R5r-re-vds"/>
+                <constraint firstItem="y0j-ck-gNW" firstAttribute="top" secondItem="8g9-zl-AaS" secondAttribute="bottom" constant="59" id="WS8-FE-0nC"/>
+                <constraint firstItem="uL6-wP-zKk" firstAttribute="top" secondItem="y0j-ck-gNW" secondAttribute="bottom" constant="99" id="YdS-ih-nf0"/>
+                <constraint firstItem="y0j-ck-gNW" firstAttribute="top" secondItem="8g9-zl-AaS" secondAttribute="bottom" constant="59" id="fv6-eb-SwN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="uL6-wP-zKk" secondAttribute="bottom" constant="20" id="ibD-qY-HIN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7x1-Ru-U3v" secondAttribute="trailing" constant="47" id="jdw-yM-BSW"/>
+                <constraint firstItem="7x1-Ru-U3v" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="45" id="nng-3i-EAc"/>
+                <constraint firstItem="8g9-zl-AaS" firstAttribute="top" secondItem="7x1-Ru-U3v" secondAttribute="bottom" constant="68" id="sxQ-Ar-vQb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="y0j-ck-gNW" secondAttribute="trailing" constant="47" id="tFb-64-dL7"/>
+                <constraint firstItem="7x1-Ru-U3v" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="47" id="zpm-6J-ni1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>
+        </view>
+    </objects>
+</document>
